@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser'
 const app = express()
 //esta sentencia es para que entienda json si no se coloca sale undefined
 app.use(express.json())
+//aqui se usa cookier parser para leer las cookies, si no se instala y se usa saldra undefined es como express json
 app.use(cookieParser())
 
 //cors permite peticiones y se puede especificar de que puerto solo recibira peticiones en este caso del frontend por el puerto 5173
@@ -19,8 +20,8 @@ app.use(cors({
 }))
 
 
-//aqui se usa cookier parser para leer las cookies, si no se instala y se usa saldra undefined es como express json
-app.use(cookieParser())
+
+
 
 
 
